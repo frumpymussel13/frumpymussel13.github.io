@@ -1,0 +1,5 @@
+body {
+    background: linear-gradient(to bottom right, rgba(58, 100, 128, 0.822), rgba(131, 52, 151, 0.882)),
+                url('./Space.png') no-repeat center center / cover;
+    
+}
