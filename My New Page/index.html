@@ -3,6 +3,11 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
     <link rel="stylesheet" href="style.css">
     <style>
+      body {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.9)),
+                url('./background.png') no-repeat center center / cover;
+    
+      }
       p {
     text-align: center;
     font-size: 20px;
@@ -14,14 +19,33 @@
   <br>
   <hr>
   <br>
+  <div id="search_bar">
+        <div id="suggestions_anchor">
+          <input type="text" id="search_input" placeholder="Search for...">
+        </div>
+      </div>
+      <div id="facet_results"></div>
+      <div id="search_results"></div>
+      <!-- [END cloud_search_widget_html] -->
+    </div>
+    <!-- Polyfills for IE11 for fetch/promises -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/unfetch/polyfill"></script>
+
+    <!-- Script for this app -->
+    <script src="with_css/app.js"></script>
+
+    <!-- [START cloud_search_widget_loader] -->
+    <!-- Google API loader -->
+    <script src="https://apis.google.com/js/api.js?mods=enable_cloud_search_widget&onload=onLoad" async defer></script>
   <style>
-    p {
+    h1 {
     text-align: center;
     font-size: 50px;
     font-family: JetBrains, monospace;
       }
   </style>
   <br>
-    <p>aaa</p>
+    <h1>aaa</h1>
   </head>
 </html>
